@@ -262,7 +262,7 @@
 */
 
 .is_sticky #content {
-	padding-top: 205px;
+	padding-top: 0;
 }
 
 
