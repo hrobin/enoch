@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Enoch Pratt Free Library</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/browse.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Domine:700' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script>
+$(function() {
+
+	// grab the initial top offset of the navigation 
+	var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+	
+	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	var sticky_navigation = function(){
+		var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+		
+		// if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+		if (scroll_top > sticky_navigation_offset_top) { 
+			$('body').addClass('is_sticky');
+			$('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		} else {
+			$('body').removeClass('is_sticky');
+			$('#sticky_navigation').css({ 'position': 'relative' }); 
+		}   
+	};
+	
+	// run our function on load
+	sticky_navigation();
+	
+	// and run it again every time you scroll
+	$(window).scroll(function() {
+		 sticky_navigation();
+	});
+	
+	// NOT required:
+	// for this demo disable all links that point to "#"
+	$('a[href="#"]').click(function(event){ 
+		event.preventDefault(); 
+	});
+	
+});
+</script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<link href='http://fonts.googleapis.com/css?family=Domine:700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+				
+<div id="demo_top_wrapper">
+	
+
+	<div id="demo_top">
+		<div class="header">
+			<div class="demo_container container">
+				<div id="my_logo"><h1>Where People and<br> Ideas Connect</h1></div>
+			</div>
+		</div>
+	</div>	
+	
+		<div id="sticky_navigation_wrapper">
+		<div id="sticky_navigation">
+			<div class="container demo_container">			
+
+<!-- THIS IS THE BANNER -->					
+<div id="banner">
+	<a href="index.html">		
+	<div class="one column logo">	
+		<img src="images/bookLogo_small.png">
+	</div>
+	
+	<div class="four columns enoch">
+	<h2>ENOCH<br>LIBRARY</h2>
+	</a>
+
+			<div class="six columns">
+			<ul id="nav">
+				<li><a href="browse.html">BROWSE</a></li>
+				<li><a href="#">RESOURCES</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="events.html">EVENTS</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">GET INVOLVED</a></li>		
+		
+			</ul>
+			</div> <!-- closes six columns -->
+
+	</div> <!-- closes four columns enoch-->
+	
+			<form class="form-search">
+    			<input type="text" class="search-query">
+   			 	<a href="#"><i class="icon-search"></i></a>
+   			 	
+   			 	<div class="glass">
+   			 		<img src="images/magnifyingGlass.png">
+   				</div>	
+
+    		</form>
+		
+
+		</div> <!-- closes banner id -->
+<!-- THIS IS THE END OF THE BANNER -->	
+
+</div> <!-- closes sticky_navigation_wrapper -->
+</div> <!-- closes sticky_navigation -->
+</div> <!-- closes container demo_container -->
+</div> <!-- closes demo_top_wrapper id -->	
+    
+	<div id="content" class="container">	
+
+		<div id="move">
+			
+		<h4>FEATURED BOOK FROM OUR NEW DIGITAL LIBRARY</h4>
+		</div>
+		
+			<div class="bigbook six columns">
+			<img src="http://lorempixel.com/280/380"/>
+			</div>
+		
+			<div class="text1 five columns">
+			<p2><strong>Title</strong><br><em>Author</em><br>
+			<img src="images/stars.png">
+			<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor, mi non ornare eleifend, leo sapien venenatis orci, at vulputate quam felis et lorem. Etiam pulvinar ultrices magna in consequat. Sed gravida ultricies libero, in commodo nibh ornare vitae. Nulla id ipsum dui, sed molestie elit.</p2>
+			</div>
+			
+
+		<div class="sixteen columns">
+			<h3>NEW IN OUR DIGITAL LIBRARY</h3>
+		</div>
+		
+		<div class="books-list sixteen columns">
+		
+			<div class="one columns leftArrow">
+				<a href="#">	
+				<img src="images/leftArrow.png">
+				</a>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="one columns rightArrow">	
+			<a href="#">
+			<img src="images/rightArrow.png">
+			</a>
+			</div>
+		
+		</div>
+		
+		<div class="sixteen columns">
+			<h3>NEW YORK TIMES BEST SELLERS</h3>
+		</div>
+		
+		<div class="books-list sixteen columns">
+		
+			<div class="one columns leftArrow">
+				<a href="#">	
+				<img src="images/leftArrow.png">
+				</a>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="books three columns">
+			<img src="http://lorempixel.com/120/170"/>
+			<p><strong>Title</strong><br><em>Author</em><br>Short description about the book to entice reader.</p>
+			</div>
+			
+			<div class="one columns rightArrow">	
+			<a href="#">
+			<img src="images/rightArrow.png">
+			</a>
+			</div>
+		
+		</div>
+
+		
+				<div class="sixteen columns footer">
+			<ul id="footerNav">
+				<li><a href="#">		
+				<div class="kidfooterIcons">	
+					<img src="images/kidsIcon.png"
+					onmouseover="this.src='images/kidsIcon-blue.png';"
+					onmouseout="this.src='images/kidsIcon.png';">
+				</a>
+				</div>
+				</li>
+				
+				<li><a href="#">			
+				<div class="librarianfooterIcons">	
+					<img src="images/librarianIcon.png"
+					onmouseover="this.src='images/librarianIcon-blue.png';"
+					onmouseout="this.src='images/librarianIcon.png';">
+				</a>
+				</div>
+				</li>
+				
+				<li><a href="#">
+				<div class="chatfooterIcons">				
+					<img src="images/chatIcon.png"
+					onmouseover="this.src='images/chatIcon-blue.png';"
+					onmouseout="this.src='images/chatIcon.png';">
+				</a>
+				</div>
+				</li>
+				
+				<li>	
+				<div class="footerIcons">			
+					<img src="images/donateIcon.png"
+					onmouseover="this.src='images/donateIcon-blue.png';"
+					onmouseout="this.src='images/donateIcon.png';">
+				</a>
+				</div>
+				</li>
+				
+				<li>	
+				<div class="connectfooterIcons">			
+					<img src="images/connectIcons.png"
+					onmouseover="this.src='images/connectIcons-blue.png';"
+					onmouseout="this.src='images/connectIcons.png';">
+				</a>
+				</div>
+				</li>
+			</ul>
+		</div>
+		
+
+	</div><!-- container -->
+
+
+<div class="bottom">
+<div class="container ">
+	<div class="one columns logo">	
+	<img src="images/bookLogo_small.png">
+	</div>
+	
+	<div class="two columns">
+	<p1>Central Library<br>400 Cathedral St.<br>Baltimore, MD 21201</p1>
+	</div>	
+	
+	<div class="two columns">
+	<p1>410-396-1441 fax<br>410-396-3761 tty</p1>
+	</div>	
+
+		<div class="eleven columns">
+			<ul id="footerUtilityNav">
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Ask a Librarian</a></li>
+				<li><a href="#">Support Us</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+</div>
+</div>
+		
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
