@@ -251,7 +251,7 @@
 	$CSS for Index Page
 */
 
-.header										{background-color: #6192A3; height: 560px; width: 100%; margin-bottom: 30px; padding-top: 1px;}
+.header										{ background-color: #6192A3; height: 560px; width: 100%;  padding-top: 1px;}
 #sticky_navigation_wrapper					{position: relative; z-index: 10; }
 
 #sticky_navigation							{background-color: white; width: 100%; }
@@ -304,9 +304,16 @@ body										{background-color: #f0e8d7;}
 
 #banner a 									{text-decoration: none;}
 
-.form-search input 							{margin-right: 30px; padding: 3px 3px; border-radius: 15px 15px 15px 15px; background-color: #f0e8d7; color: #eee; margin-top: 15px; box-shadow:none !important;}
+.form-search { position: relative; margin-top: 18px;}
 
-.glass										{margin-top: -45px; padding-right: 37px;}
+.form-search input 							{  padding: 3px 3px; border-radius: 15px 15px 15px 15px; background-color: #f0e8d7; color: #eee;  box-shadow:none !important;}
+
+.glass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27px;
+}
 
 #move										{padding-top:165px;}
 
@@ -335,7 +342,7 @@ p1 											{color: white; font-size: 12px;}
 #UtilityNav  a:hover						{ color: #CCC;}
 #UtilityNav  a:active						{ color: #CCC;}
 
-#nav										{margin-left: 175px; margin-top: -75px; }
+#nav										{ }
 
 #nav a:link									{ color: #CCC;}
 #nav a:visited								{ color: #CCC;}
